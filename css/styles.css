@@ -4,16 +4,23 @@ body {
 
 
 #title {
-    background-color: #ff4c68;
-    color: #fff;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    /* overflow: hidden; */
 }
 
+/* Sections */
 
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -28,6 +35,8 @@ h1 {
 .iphone {
     height: 35rem;
     padding: 1.5rem 0 0 1rem;
+    position: absolute;
+    right: 20rem;
     transform: rotate(25deg);
 }
 
@@ -63,7 +72,10 @@ h1 {
 /* Section 2: Features */
 
 #features {
-    margin-top: 4rem;
+    background-color: #fff;
+    padding-top: 4rem;
+    position: relative;
+    z-index: 1;
 }
 
 .feat {
@@ -82,7 +94,7 @@ h1 {
     color: #ff4c68;
 }
 
-.feat-h3 {
+.feat-h3, .pricing-h3 {
     font-family: "Montserrat";
     font-weight: bolder;
     font-size: 1.5rem;
@@ -119,7 +131,6 @@ h1 {
  
 #press {
     text-align: center;
-
 } 
 
 .press-div {
@@ -141,4 +152,61 @@ h1 {
 
 .pricing-btn {
     width: 100%;
+}
+
+/* Media Queries Section */
+
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .iphone {
+        padding: 1.5rem 0 0 1rem;
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+
+/* Call To Action Section */
+
+#cta {
+    text-align: center;
+}
+
+.cta-h3 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .cta-h3 {
+        font-size: 2rem;
+    }
+}
+
+.cta-btn {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* Footer Section */
+
+#footer {
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.footer-icon {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-p {
+    color: #8f8f8f;
 }

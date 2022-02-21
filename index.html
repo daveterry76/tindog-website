@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <section id="title">
+    <section class="colored-section" id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark mb-5 navigation">
@@ -56,12 +56,12 @@
 
           <div class="collapse navbar-collapse" id="navToggle">
             <ul class="navbar-nav ms-auto">
-              <li class="navbar-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="navbar-item"><a class="nav-link" href="#cta">Contact</a></li>
               <li class="navbar-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="navbar-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#footer">Download</a>
               </li>
             </ul>
           </div>
@@ -91,7 +91,7 @@
 
     <!-- Features -->
 
-    <section id="features">
+    <section class="white-section" id="features">
       <div class="row container-fluid">
         <div class="col-lg-4 col-md feat">
           <i class="fa-solid fa-circle-check feat-icon"></i>
@@ -120,7 +120,7 @@
     <section id="testimonials">
       <div
         id="carouselExampleControls"
-        class="carousel slide carousel-fade"
+        class="carousel slide"
         data-bs-ride="carousel"
         data-bs-interval="3500"
         data-bs-pause="hover"
@@ -210,14 +210,14 @@
 
     <!-- Pricing -->
 
-    <section id="pricing">
+    <section class="white-section" id="pricing">
       <h2 class="text-center testimonial-text">A Plan for Every Dog's Needs</h2>
       <p class="text-center">Simple and affordable price plans for your and your dog.</p>
       <div class="row text-center">
         <div class="col-lg-4 col-md-6">
           <div class="card mb-3 mx-3">
             <div class="card-header">
-              <h3 class="card-title feat-h3">Chihuahua</h3>
+              <h3 class="card-title pricing-h3">Chihuahua</h3>
             </div>
             <div class="card-body">
               <h2 class="testimonial-text">Free</h2>
@@ -231,7 +231,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="card mb-3 mx-3">
             <div class="card-header">
-              <h3 class="card-title feat-h3">Labrador</h3>
+              <h3 class="card-title pricing-h3">Labrador</h3>
             </div>
             <div class="card-body">
               <h2 class="testimonial-text">$49 / mo</h2>
@@ -245,7 +245,7 @@
         <div class="col-lg-4">
           <div class="card mb-3 mx-3">
             <div class="card-header">
-              <h3 class="card-title feat-h3">Mastiff</h3>
+              <h3 class="card-title pricing-h3">Mastiff</h3>
             </div>
             <div class="card-body">
               <h2 class="testimonial-text">$99 / mo</h2>
@@ -263,16 +263,24 @@
 
     <!-- Call to Action -->
 
-    <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+    <section class="colored-section" id="cta">
+      <div class="container-fluid">
+        <h3 class="cta-h3 mb-5 pt-5">Find the True Love of Your Dog's Life Today.</h3>
+        <button type="button" class="btn btn-lg btn-dark cta-btn"><i class="fa-brands fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-lg btn-light cta-btn"><i class="fa-brands fa-google-play"></i> Download</button>
+      </div>
     </section>
 
     <!-- Footer -->
 
-    <footer id="footer">
-      <p>© Copyright TinDog</p>
+    <footer class="white-section" id="footer">
+      <div class="container-fluid">
+        <i class="fa-brands fa-twitter footer-icon"></i>
+        <i class="fa-brands fa-facebook-f footer-icon"></i>
+        <i class="fa-brands fa-instagram footer-icon"></i>
+        <i class="fa-solid fa-envelope footer-icon"></i>
+        <p class="footer-p">© Copyright TinDog</p>
+      </div>
     </footer>
   </body>
 </html>
